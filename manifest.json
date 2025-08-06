@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "quickAddExtension",
+  "version": "1.0",
+  "description": "an extension to quickly add Eventbrite events to your calendar",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
